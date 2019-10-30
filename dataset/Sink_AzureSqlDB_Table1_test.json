@@ -1,5 +1,5 @@
 {
-	"name": "Sink_AzureSqlDB_Table1",
+	"name": "Sink_AzureSqlDB_Table1_test",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "testjohndb_AzureSQL_Table1",
