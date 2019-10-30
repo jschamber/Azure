@@ -73,7 +73,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Sink_AzureSqlDB_Table1",
+						"referenceName": "Sink_AzureSqlDB_Table1_test",
 						"type": "DatasetReference"
 					}
 				]
