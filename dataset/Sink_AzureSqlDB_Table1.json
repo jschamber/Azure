@@ -1,0 +1,27 @@
+{
+	"name": "Sink_AzureSqlDB_Table1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "testjohndb_AzureSQL_Table1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "hjgfjhgfjhgf",
+				"type": "nchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Table1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

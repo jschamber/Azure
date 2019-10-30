@@ -1,0 +1,30 @@
+{
+	"name": "Sink_testjohn7_blobjson__test2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azure_BlobStorage_testjohn7",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "test2",
+				"container": "testjohn"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"col1": {
+					"type": "string"
+				},
+				"col2": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

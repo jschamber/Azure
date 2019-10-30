@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Copy_Pipeline_blobsvc_AzureSql",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2019-10-30T19:36:00Z",
+				"endTime": "2019-10-31T20:36:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
