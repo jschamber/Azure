@@ -1,0 +1,20 @@
+{
+	"name": "DestinationDataset_0s6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sink_address_parquet",
+				"container": "testjohn"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
