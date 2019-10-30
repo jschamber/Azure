@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "sink_address_parquet",
 				"container": "testjohn"
 			},
 			"compressionCodec": "snappy"
