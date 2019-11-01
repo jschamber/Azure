@@ -5,9 +5,9 @@
 		"annotations": [],
 		"type": "FileServer",
 		"typeProperties": {
-			"host": "C:\\",
-			"userId": "jschamber",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1YTVjMDgyNS0wMDJkLTQ0ZTItYmFjMi03YjNjMWI1ZDkzMDQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"host": "C:\\Users\\jschamber\\OneDrive - Groundswell Group Inc\\_Teine\\citibike-tripdata",
+			"userId": "jschamber@groundswellgroup.ca",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmMzg4Yjc4ZS1mYWFlLTRmMGQtYmEzNy01ZDRlNzc1MGNiMmYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "selfhostedintegrationRuntime1",
