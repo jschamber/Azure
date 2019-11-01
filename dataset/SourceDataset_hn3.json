@@ -9,7 +9,8 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "FileServerLocation"
+				"type": "FileServerLocation",
+				"folderPath": "citibike-tripdata"
 			},
 			"columnDelimiter": ",",
 			"rowDelimiter": "\n",
