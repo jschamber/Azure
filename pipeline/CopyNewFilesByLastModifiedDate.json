@@ -63,11 +63,11 @@
 		"parameters": {
 			"FolderPath_Source": {
 				"type": "String",
-				"defaultValue": "/<myfolder>/<sub_folder>/"
+				"defaultValue": "/excel_data_source/"
 			},
 			"FolderPath_Destination": {
 				"type": "String",
-				"defaultValue": "/<myfolder>/<sub_folder>/"
+				"defaultValue": "/raw/"
 			},
 			"LastModified_From": {
 				"type": "String",
