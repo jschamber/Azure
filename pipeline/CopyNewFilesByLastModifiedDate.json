@@ -63,7 +63,7 @@
 		"parameters": {
 			"FolderPath_Source": {
 				"type": "String",
-				"defaultValue": "\\excel_data_source\\"
+				"defaultValue": "excel_data_source"
 			},
 			"FolderPath_Destination": {
 				"type": "String",
