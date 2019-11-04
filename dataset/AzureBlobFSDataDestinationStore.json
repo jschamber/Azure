@@ -1,0 +1,23 @@
+{
+	"name": "AzureBlobFSDataDestinationStore",
+	"properties": {
+		"description": "Connection to your data destination store.  ",
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FolderPath": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "AzureBlobFSFile",
+		"typeProperties": {
+			"folderPath": {
+				"value": "@dataset().FolderPath",
+				"type": "Expression"
+			}
+		}
+	}
+}
