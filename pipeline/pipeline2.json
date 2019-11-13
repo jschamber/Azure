@@ -18,7 +18,7 @@
 					"functionName": " HttpExample",
 					"method": "GET",
 					"headers": {
-						"": "John"
+						"Name": "John"
 					}
 				},
 				"linkedServiceName": {
