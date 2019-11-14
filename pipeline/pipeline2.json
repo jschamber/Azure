@@ -16,9 +16,9 @@
 				"userProperties": [],
 				"typeProperties": {
 					"functionName": " HttpExample",
-					"method": "GET",
-					"headers": {
-						"Name": "John"
+					"method": "POST",
+					"body": {
+						"name": "John"
 					}
 				},
 				"linkedServiceName": {
