@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "@{item().file_name}.csv",
-				"folderPath": "test",
+				"folderPath": "test/@{item().year_number}./@{item().month_number}.",
 				"fileSystem": "simple"
 			},
 			"columnDelimiter": ",",
