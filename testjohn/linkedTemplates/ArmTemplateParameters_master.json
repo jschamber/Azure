@@ -1,0 +1,111 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "testjohn"
+		},
+		"AzureBatch1_accessKey": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage3_accountKey": {
+			"value": ""
+		},
+		"AzureFunction1_functionKey": {
+			"value": ""
+		},
+		"Azure_BlobStorage_testjohn7_connectionString": {
+			"value": ""
+		},
+		"HttpServer1_password": {
+			"value": ""
+		},
+		"Source_SalesLT_Address_connectionString": {
+			"value": ""
+		},
+		"azure batch_AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"destcsv_accountKey": {
+			"value": ""
+		},
+		"grabcsv_accountKey": {
+			"value": ""
+		},
+		"linkedService1_connectionString": {
+			"value": ""
+		},
+		"linkedService1_password": {
+			"value": ""
+		},
+		"linkedService2_connectionString": {
+			"value": ""
+		},
+		"linkedService2_password": {
+			"value": ""
+		},
+		"testjohndb_AzureSQL_Table1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobFSDataDestinationStore_properties_typeProperties_fileName": {
+			"value": ""
+		},
+		"AzureBlobFSDataDestinationStore_properties_typeProperties_folderPath": {
+			"value": "@dataset().FolderPath"
+		},
+		"AzureBlobStorageDataDestination_properties_typeProperties_fileName": {
+			"value": "@dataset().FileName"
+		},
+		"AzureBlobStorageDataDestination_properties_typeProperties_folderPath": {
+			"value": "@dataset().FolderPath"
+		},
+		"AzureBatch1_properties_typeProperties_accountName": {
+			"value": "tetsjohn1"
+		},
+		"AzureBatch1_properties_typeProperties_batchUri": {
+			"value": "https://tetsjohn1.canadacentral.batch.azure.com"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://citubike.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://testjohncsv.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"value": "https://simpleadlsexample.dfs.core.windows.net"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://grgcc-my.sharepoint.com/personal/jschamber_groundswellgroup_ca/_layouts/15/onedrive.aspx"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"value": "jschamber"
+		},
+		"destcsv_properties_typeProperties_url": {
+			"value": "https://testjohncsv.dfs.core.windows.net"
+		},
+		"grabcsv_properties_typeProperties_url": {
+			"value": "https://testjohncsv.dfs.core.windows.net"
+		},
+		"linkedService1_properties_typeProperties_userName": {
+			"value": "ggi\\jschamber"
+		},
+		"linkedService2_properties_typeProperties_userName": {
+			"value": "ggi\\jschamber"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
