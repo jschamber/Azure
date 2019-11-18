@@ -10,12 +10,19 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "@{item().file_name}.csv",
-				"folderPath": "test/@{item().year_number}./@{item().month_number}.",
+				"fileName": {
+					"value": "@{item().file_name}.csv",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "test/@{item().year_number}./@{item().month_number}.",
+					"type": "Expression"
+				},
 				"fileSystem": "simple"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
