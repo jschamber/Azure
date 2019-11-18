@@ -1,0 +1,16 @@
+{
+	"name": "ADF_SimplePatternCopydatafromMultiple_Tables_IntoLake",
+	"properties": {
+		"parameters": {
+			"TableList": {
+				"type": "array"
+			}
+		},
+		"variables": {
+			"table": {
+				"type": "Array"
+			}
+		},
+		"annotations": []
+	}
+}
