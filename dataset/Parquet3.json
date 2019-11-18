@@ -10,8 +10,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "@{item().file_name}.parquet",
-				"folderPath": "test",
+				"fileName": {
+					"value": "@{item().file_name}.parquet",
+					"type": "Expression"
+				},
+				"folderPath": "test/@{item().year_number}/@{item().month_number}",
 				"fileSystem": "simple"
 			},
 			"compressionCodec": "snappy"
