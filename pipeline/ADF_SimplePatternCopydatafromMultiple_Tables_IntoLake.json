@@ -61,7 +61,10 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
-									"sqlReaderQuery": "SELECT '@{item().table_name}' AS [table_name], '@{item().date_column}' AS [date_column], '@{item().file_name}' AS [file_name],\nYEAR(@{item().date_column}) AS [year_number] ,FORMAT(MONTH(@{item().date_column}), '00') AS [month_number], COUNT(1) AS [row_count]\n  FROM @{item().table_name}\n  GROUP BY YEAR(@{item().date_column}), MONTH(@{item().date_column})\n  ORDER BY YEAR(@{item().date_column}), MONTH(@{item().date_column})"
+									"sqlReaderQuery": {
+										"value": "SELECT '@{item().table_name}' AS [table_name], '@{item().date_column}' AS [date_column], '@{item().file_name}' AS [file_name],\nYEAR(@{item().date_column}) AS [year_number] ,FORMAT(MONTH(@{item().date_column}), '00') AS [month_number], COUNT(1) AS [row_count]\n  FROM @{item().table_name}\n  GROUP BY YEAR(@{item().date_column}), MONTH(@{item().date_column})\n  ORDER BY YEAR(@{item().date_column}), MONTH(@{item().date_column})",
+										"type": "Expression"
+									}
 								},
 								"sink": {
 									"type": "SqlServerSink",
@@ -151,7 +154,10 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
-									"sqlReaderQuery": "SELECT *\n  FROM @{item().table_name}\n"
+									"sqlReaderQuery": {
+										"value": "SELECT *\n  FROM @{item().table_name}\n WHERE MONTH(@{item().date_column}) = @{item().month_number} AND YEAR(@{item().date_column})  = @{item().year_number}",
+										"type": "Expression"
+									}
 								},
 								"sink": {
 									"type": "DelimitedTextSink",
