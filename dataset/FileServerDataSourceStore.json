@@ -2,10 +2,6 @@
 	"name": "FileServerDataSourceStore",
 	"properties": {
 		"description": "Connection to your data source store.  ",
-		"linkedServiceName": {
-			"referenceName": "FileServer1",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"FolderPath": {
 				"type": "String"
