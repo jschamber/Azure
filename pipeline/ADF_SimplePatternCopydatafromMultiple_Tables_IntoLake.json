@@ -64,7 +64,8 @@
 									"sqlReaderQuery": "SELECT '@{item().table_name}' AS [table_name], '@{item().date_column}' AS [date_column], '@{item().file_name}' AS [file_name],\nYEAR(@{item().date_column}) AS [year_number] ,FORMAT(MONTH(@{item().date_column}), '00') AS [month_number], COUNT(1) AS [row_count]\n  FROM @{item().table_name}\n    WHERE MONTH(@{item().date_column}) >= MONTH(GETDATE())-2\n  AND YEAR(@{item().date_column}) = YEAR(DATEADD(MONTH, -2,GETDATE()))\n  GROUP BY YEAR(@{item().date_column}), MONTH(@{item().date_column})\n  ORDER BY YEAR(@{item().date_column}), MONTH(@{item().date_column})"
 								},
 								"sink": {
-									"type": "SqlServerSink"
+									"type": "SqlServerSink",
+									"sqlWriterStoredProcedureName": "[dbo].[usp_upsert_ADFWorkingTable]"
 								},
 								"enableStaging": false
 							},
