@@ -1,0 +1,17 @@
+{
+	"name": "linkedService2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=.;initial catalog=ADF_Metadata",
+			"userName": "ggi\\jschamber",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyODc4ZGM5MC1lZDg3LTRhNDItODkxZC01OWM0NDVlZGYxZmYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime-selfhosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

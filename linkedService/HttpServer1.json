@@ -1,0 +1,15 @@
+{
+	"name": "HttpServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://grgcc-my.sharepoint.com/personal/jschamber_groundswellgroup_ca/_layouts/15/onedrive.aspx",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "jschamber",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlRFU1RKT0hOX2I0MDY4NDYzLTEwNTctNDY0MS1hODBiLWRkZThhOTEzNzE4MiINCn0="
+		}
+	}
+}
