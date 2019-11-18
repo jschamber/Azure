@@ -114,7 +114,8 @@
 					"dataset": {
 						"referenceName": "SqlServerTable2",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
