@@ -68,7 +68,10 @@
 									}
 								},
 								"sink": {
-									"type": "SqlServerSink"
+									"type": "SqlServerSink",
+									"sqlWriterStoredProcedureName": "usp_upsert_ADFWorkingTable",
+									"sqlWriterTableType": "ADF_TableToFileWorkingTable_TableType",
+									"storedProcedureTableTypeParameterName": "DataToLoad"
 								},
 								"enableStaging": false
 							},
