@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[usp_TruncateTable]",
+					"storedProcedureName": "usp_upsert_ADFWorkingTable",
 					"storedProcedureParameters": {
 						"FullSchemaTableName": {
 							"value": "[dbo].[ADFWorkingTable]",
@@ -24,7 +24,7 @@
 					}
 				},
 				"linkedServiceName": {
-					"referenceName": "linkedService2",
+					"referenceName": "DS_SQL_ADFWorkingTable",
 					"type": "LinkedServiceReference"
 				}
 			},
