@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "usp_upsert_ADFWorkingTable",
+					"storedProcedureName": "usp_TruncateTable",
 					"storedProcedureParameters": {
 						"FullSchemaTableName": {
 							"value": "[dbo].[ADFWorkingTable]",
