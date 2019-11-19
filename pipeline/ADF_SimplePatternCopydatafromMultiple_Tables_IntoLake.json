@@ -48,7 +48,7 @@
 					},
 					"activities": [
 						{
-							"name": "Copy data1",
+							"name": "Copy Source Table details to Metadata",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -142,7 +142,7 @@
 					},
 					"activities": [
 						{
-							"name": "Copy data2",
+							"name": "Select all rows from source and put in Azure data Lake",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
