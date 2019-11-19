@@ -1,8 +1,8 @@
 {
-	"name": "SqlServerTable2",
+	"name": "ADF_Metadata",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "linkedService2",
+			"referenceName": "DS_SQL_ADFWorkingTable",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

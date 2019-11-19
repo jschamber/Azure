@@ -68,10 +68,7 @@
 									}
 								},
 								"sink": {
-									"type": "SqlServerSink",
-									"sqlWriterStoredProcedureName": "[dbo].[usp_upsert_ADFWorkingTable]",
-									"sqlWriterTableType": "ADF_TableToFileWorkingTable_TableType",
-									"storedProcedureTableTypeParameterName": "DataToLoad"
+									"type": "SqlServerSink"
 								},
 								"enableStaging": false
 							},
@@ -83,7 +80,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "SqlServerTable2",
+									"referenceName": "ADF_Metadata",
 									"type": "DatasetReference"
 								}
 							]
@@ -116,7 +113,7 @@
 						"sqlReaderQuery": "SELECT [table_name]\n      ,[date_column]\n      ,[file_name]\n      ,[year_number]\n      ,[month_number]\n  FROM [dbo].[ADFWorkingTable]"
 					},
 					"dataset": {
-						"referenceName": "SqlServerTable2",
+						"referenceName": "ADF_Metadata",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
