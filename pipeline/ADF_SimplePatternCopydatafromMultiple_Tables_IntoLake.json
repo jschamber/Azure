@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Stored Procedure1",
+				"name": "Truncate Metadata Table",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [],
 				"policy": {
@@ -29,11 +29,12 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "Loop through each table listed in JSON Parameter",
+				"description": "+ Write to Metadata Table",
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Stored Procedure1",
+						"activity": "Truncate Metadata Table",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -91,11 +92,11 @@
 				}
 			},
 			{
-				"name": "Lookup1",
+				"name": "Read Metadata table",
 				"type": "Lookup",
 				"dependsOn": [
 					{
-						"activity": "ForEach1",
+						"activity": "Loop through each table listed in JSON Parameter",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -122,11 +123,12 @@
 				}
 			},
 			{
-				"name": "ForEach2",
+				"name": "Loop through each record in Metadata table",
+				"description": "+ do a select * and copy into the Azure data Lake",
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "Read Metadata table",
 						"dependencyConditions": [
 							"Succeeded"
 						]
