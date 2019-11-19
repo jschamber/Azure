@@ -1,0 +1,17 @@
+{
+	"name": "DS_SQL_ADFWorkingTable",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=localhost;initial catalog=ADF_Metadata",
+			"userName": "ggi\\jschamber",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyMDEwZjQ1MS0wYzMzLTQxYTMtODZiNC1kMTAxYzliNTZiNTgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime-selfhosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
