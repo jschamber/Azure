@@ -62,7 +62,7 @@
 								"source": {
 									"type": "SqlServerSource",
 									"sqlReaderQuery": {
-										"value": "SELECT '@{item().table_name}' AS [table_name], '@{item().date_column}' AS [date_column], '@{item().file_name}' AS [file_name],\nYEAR(@{item().date_column}) AS [year_number] ,FORMAT(MONTH(@{item().date_column}), '00') AS [month_number], COUNT(1) AS [row_count]\n  FROM @{item().table_name}\n  GROUP BY YEAR(@{item().date_column}), MONTH(@{item().date_column})\n  ORDER BY YEAR(@{item().date_column}), MONTH(@{item().date_column})",
+										"value": "SELECT '@{item().table_name}' AS [table_name], '@{item().date_column}' AS [date_column], '@{item().file_name}' AS [file_name],\nYEAR(@{item().date_column}) AS [year_number] ,FORMAT(MONTH(@{item().date_column}), '00') AS [month_number], COUNT(1) AS [row_count]\n  FROM @{item().table_name}\n  WHERE YEAR(@{item().date_column}) is not null\n  GROUP BY YEAR(@{item().date_column}), MONTH(@{item().date_column})\n  ORDER BY YEAR(@{item().date_column}), MONTH(@{item().date_column})",
 										"type": "Expression"
 									}
 								},
