@@ -182,7 +182,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DelimitedText2",
+									"referenceName": "ADLS2_Targetlocation",
 									"type": "DatasetReference"
 								}
 							]

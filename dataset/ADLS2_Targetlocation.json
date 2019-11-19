@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText2",
+	"name": "ADLS2_Targetlocation",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "DS_ADLS2",
