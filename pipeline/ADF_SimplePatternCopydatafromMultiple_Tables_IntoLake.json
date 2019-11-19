@@ -30,7 +30,7 @@
 			},
 			{
 				"name": "Loop through each table listed in JSON Parameter",
-				"description": "+ Write to Metadata Table",
+				"description": "1) Source DB is SQL Query to determine the Years/Months/Number of Rows\n2) Sink to Metadata Table",
 				"type": "ForEach",
 				"dependsOn": [
 					{
