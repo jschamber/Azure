@@ -196,11 +196,6 @@
 				"type": "array"
 			}
 		},
-		"variables": {
-			"table": {
-				"type": "Array"
-			}
-		},
 		"annotations": []
 	}
 }
