@@ -77,7 +77,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SqlServerTable1",
+									"referenceName": "SourceDB",
 									"type": "DatasetReference"
 								}
 							],
@@ -176,7 +176,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SqlServerTable1",
+									"referenceName": "SourceDB",
 									"type": "DatasetReference"
 								}
 							],

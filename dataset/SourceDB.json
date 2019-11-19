@@ -1,8 +1,8 @@
 {
-	"name": "SqlServerTable1",
+	"name": "SourceDB",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "linkedService1",
+			"referenceName": "DS_SQL_SourceDB",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
